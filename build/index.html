@@ -12,12 +12,19 @@
   <link rel="preload" href="fonts/RobotoCondensed-Regular.woff" as="font" type="font/woff" crossorigin="anonymous">
   <link rel="preload" href="fonts/RobotoCondensed-Bold.woff" as="font" type="font/woff" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.min.css">
+  <script>
+    document.createElement("picture");
+  </script>
+  <script src="js/picturefill.js" async=""></script>
 </head>
 <body>
   <header class="page-header">
     <div class="page-header__wrapper wrapper">
       <a class="page-header__logo">
-        <img src="img/logo-header.png" alt="Логотип" width="202" height="52">
+        <picture>
+          <source media="(max-width: 767px)" srcset="img/logo-mobile.png">
+          <img src="img/logo-header.png" alt="Логотип" width="202" height="52">
+        </picture>
       </a>
       <ul class="page-header__links">
         <li class="page-header__item">
@@ -34,10 +41,12 @@
     <h1 class="visually-hidden">Компания Smart Device</h1>
     <section class="intro">
       <div class="intro__wrapper wrapper">
-        <h2 class="intro__heading">Печатные платы</h2>
-        <p class="intro__text">производство и монтаж, поставка комплектующих, блоков и модулей</p>
-        <a href="#" class="intro__link button">Получить бесплатную консультацию</a>
-        <a href="#" class="intro__scroll">Скролл вниз</a>
+        <div class="intro__text-wrapper">
+          <h2 class="intro__heading">Печатные платы</h2>
+          <p class="intro__text">производство и монтаж, поставка комплектующих, блоков и модулей</p>
+          <a href="#" class="intro__link button">Бесплатная консультация</a>
+          <a href="#" class="intro__scroll">Скролл вниз</a>
+        </div>
       </div>
     </section>
   </main>
