@@ -1,5 +1,9 @@
 @import "fonts";
-
-h1 {
-  color: red;
-}
+@import "variables";
+@import "mixins";
+@import "global";
+@import "blocks/visually-hidden";
+@import "blocks/wrapper";
+@import "blocks/button";
+@import "blocks/page-header";
+@import "blocks/intro";

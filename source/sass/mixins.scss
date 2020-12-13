@@ -1,0 +1,25 @@
+@mixin ptmono ($font-size, $line-height) {
+  font-family: "PTMono", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: $font-size;
+  line-height: $line-height;
+}
+
+@mixin roboto-condensed ($font-size, $line-height, $font-weight: 400) {
+  font-family: "RobotoCondensed", "Arial", sans-serif;
+  font-weight: $font-weight;
+  font-size: $font-size;
+  line-height: $line-height;
+}
+
+@mixin list-reset {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@mixin fieldset-reset {
+  border: none;
+  padding: 0;
+  margin: 0;
+}

@@ -1,0 +1,18 @@
+.button {
+  font-family: "RobotoCondensed", "Arial", sans-serif;
+  font-weight: 700;
+
+  letter-spacing: 0.8px;
+
+  color: $white;
+  text-transform: uppercase;
+
+  box-sizing: border-box;
+
+  background: none;
+  border-radius: 5px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

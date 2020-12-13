@@ -1,0 +1,79 @@
+.intro {
+  background-image: url("../img/intro-desktop.png");
+  background-repeat: no-repeat;
+  background-position: calc(50% + 435px) 33px;
+}
+
+.intro__wrapper {
+  min-height: 793px;
+  flex-grow: 1;
+
+  position: relative;
+}
+
+.intro__heading {
+  @include roboto-condensed(80px, 93.75px, 700);
+
+  color: $white;
+  text-transform: uppercase;
+  letter-spacing: 5.6px;
+
+  padding-top: 230px;
+
+  margin: 0;
+  margin-bottom: 27px;
+  margin-left: 10px;
+
+}
+
+.intro__text {
+  @include ptmono(22px, 34.5px);
+
+  color: white;
+  text-transform: lowercase;
+
+  max-width: 683px;
+
+  margin-bottom: 43px;
+  margin-left: 108px;
+
+  position: relative;
+
+  &::before {
+    display: block;
+    content: "";
+
+    width: 66px;
+    height: 2px;
+
+    background-color: $white;
+
+    position: absolute;
+    top: 17px;
+    left: -94px;
+  }
+}
+
+.intro__link {
+  width: 407px;
+  height: 55px;
+
+  margin-left: 108px;
+
+  background-color: $blue;
+}
+
+.intro__scroll {
+  @include ptmono(14px, 15.68px);
+
+  color: $white;
+  opacity: 0.5;
+
+  display: block;
+  max-width: 100px;
+
+  margin-top: 128px;
+  margin-left: -28px;
+
+  transform: rotate(-90deg);
+}
