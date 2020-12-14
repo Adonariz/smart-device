@@ -1,0 +1,187 @@
+.page-footer {
+  background-color: $white-footer;
+  overflow-x: hidden;
+}
+
+.page-footer__wrapper {
+  display: flex;
+  flex-direction: column;
+
+  min-height: 316px;
+
+  outline: 1px solid tomato;
+}
+
+.page-footer__first-line {
+  display: flex;
+  padding-bottom: 59px;
+}
+
+.page-footer__about {
+  display: flex;
+  flex-direction: column;
+}
+
+.page-footer__logo {
+  margin-top: 65px;
+  margin-bottom: 54px;
+  margin-left: 13px;
+}
+
+.page-footer__activity {
+  &--about {
+    display: none;
+  }
+
+  &--copyright {
+    margin-left: 5.2%;
+  }
+}
+
+.page-footer__social-list {
+  @include list-reset;
+
+  display: flex;
+  margin-left: 13px;
+}
+
+.page-footer__social-list li {
+  display: flex;
+
+  &:not(:last-of-type) {
+    margin-right: 15px;
+  }
+}
+
+.page-footer__social-icon {
+  width: 27px;
+  height: 27px;
+
+  fill: $grey;
+
+  &:hover,
+  &:focus {
+    fill: $blue;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.page-footer__navi-wrapper {
+  display: flex;
+  flex-grow: 1;
+
+  max-width: 989px;
+
+  margin-left: auto;
+  padding-top: 50px;
+  padding-left: 70px;
+}
+
+.page-footer__sections {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+
+  max-width: 600px;
+}
+
+.page-footer__navi-heading {
+  @include roboto-condensed(15px, 16px);
+
+  color: $dark;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+
+  margin-bottom: 25px;
+}
+
+.page-footer__navi-list {
+  @include list-reset;
+
+  columns: 2;
+}
+
+.page-footer__navi-link {
+  &:hover,
+  &:focus {
+    color: $blue;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.page-footer__text {
+  @include ptmono(15px, 25px);
+
+  color: rgba($color: $dark, $alpha: 0.5);
+}
+
+.page-footer__contacts {
+  margin-left: auto;
+  padding-left: 20px;
+}
+
+.page-footer__phones-list {
+  @include list-reset;
+}
+
+.page-footer__address {
+  margin-bottom: 0;
+}
+
+.page-footer__copyright {
+  display: flex;
+  align-items: center;
+
+  min-height: 52px;
+
+  @include ptmono(13px, 24px);
+
+  color: rgba($color: $dark, $alpha: 0.5);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+
+  position: relative;
+
+  &::before {
+    content: "";
+    display: block;
+
+    width: 10000px;
+    height: 1px;
+
+    background-color: rgba(#626962, 0.2);
+
+    position: absolute;
+    top: -1px;
+    left: -50%;
+  }
+}
+
+.page-footer__copyright-text {
+  margin-left: 13px;
+}
+
+.page-footer__nda {
+  color: rgba($color: $dark, $alpha: 0.5);
+
+  margin-left: 10%;
+
+  &:hover,
+  &:focus {
+    color: $blue;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.page-footer__studio {
+  margin-left: auto;
+}

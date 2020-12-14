@@ -18,6 +18,7 @@
   <script src="js/picturefill.js" async></script>
 </head>
 <body>
+  <div style="display: none;"><include style="display: none" src="build/img/sprite_auto.svg"></include></div>
   <header class="page-header">
     <div class="page-header__wrapper wrapper">
       <a class="page-header__logo">
@@ -51,18 +52,36 @@
     </section>
   </main>
   <footer class="page-footer">
-    <div class="page-footer__wrapper wrapper">
+    <div class="page-footer__first-line wrapper">
       <div class="page-footer__about">
         <a class="page-footer__logo">
-          <img src="img/logo-footer.png" alt="Логотип">
+          <img src="img/logo-footer.png" alt="Логотип" width="216" height="52">
         </a>
         <p class="page-footer__activity page-footer__activity--about">
           1999-2018 SD Service Devices
         </p>
         <ul class="page-footer__social-list">
-          <li><a href="#" class="page-footer__social-link" aria-label="Фейсбук"></a></li>
-          <li><a href="#" class="page-footer__social-link" aria-label="Одноклассники"></a></li>
-          <li><a href="#" class="page-footer__social-link" aria-label="ВКонтакте"></a></li>
+          <li>
+            <a href="#" aria-label="Фейсбук">
+              <svg class="page-footer__social-icon">
+                <use xlink:href="#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="page-footer__social-link" aria-label="Одноклассники">
+              <svg class="page-footer__social-icon">
+                <use xlink:href="#icon-ok"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="page-footer__social-link" aria-label="ВКонтакте">
+              <svg class="page-footer__social-icon">
+                <use xlink:href="#icon-vk"></use>
+              </svg>
+            </a>
+          </li>
         </ul>
       </div>
       <div class="page-footer__navi-wrapper">
@@ -70,44 +89,44 @@
           <h3 class="page-footer__navi-heading">Разделы сайта</h3>
           <ul class="page-footer__navi-list">
             <li>
-              <a class="page-header__navi-link" href="#">О компании</a>
+              <a class="page-footer__navi-link page-footer__text" href="#">О компании</a>
             </li>
             <li>
-              <a class="page-header__navi-link" href="#">Продукты</a>
+              <a class="page-footer__navi-link page-footer__text" href="#">Продукты</a>
             </li>
             <li>
-              <a class="page-header__navi-link" href="#">Производство печатных плат</a>
+              <a class="page-footer__navi-link page-footer__text" href="#">Производство печатных плат</a>
             </li>
             <li>
-              <a class="page-header__navi-link" href="#">Монтаж печатных плат</a>
+              <a class="page-footer__navi-link page-footer__text" href="#">Монтаж печатных плат</a>
             </li>
             <li>
-              <a class="page-header__navi-link" href="#">Комплектующие</a>
+              <a class="page-footer__navi-link page-footer__text" href="#">Комплектующие</a>
             </li>
             <li>
-              <a class="page-header__navi-link" href="#">Доставка</a>
+              <a class="page-footer__navi-link page-footer__text" href="#">Доставка</a>
             </li>
             <li>
-              <a class="page-header__navi-link" href="#">Контакты</a>
+              <a class="page-footer__navi-link page-footer__text" href="#">Контакты</a>
             </li>
           </ul>
         </div>
         <div class="page-footer__contacts">
-          <h3 class="page-footer__navi-heading"></h3>
-          <p class="page-footer__address">г. Мытищи, Олимпийский проспект, д.10</p>
-          <ul class="page-footer__phone-list">
-            <li>+7 (495) 589-40-50</li>
-            <li>+7 (925) 003-87-67</li>
-            <li>+7 (926) 926-080-79</li>
+          <h3 class="page-footer__navi-heading">Наш офис</h3>
+          <p class="page-footer__address page-footer__text">г. Мытищи, Олимпийский проспект, д.10</p>
+          <ul class="page-footer__phones-list">
+            <li class="page-footer__text">+7 (495) 589-40-50</li>
+            <li class="page-footer__text">+7 (925) 003-87-67</li>
+            <li class="page-footer__text">+7 (926) 926-080-79</li>
           </ul>
         </div>
       </div>
-      <div class="page-footer__copyright">
-        <p class="page-footer__copyright-text">Все права защищены</p>
-        <p class="page-footer__activity page-footer__activity--copyright">1999-2018 SD Service Devices</p>
-        <a class="page-footer__nda" href="#">Условия конфиденциальности</a>
-        <p class="page-footer__studio">Developed by wow studio</p>
-      </div>
+    </div>
+    <div class="page-footer__copyright wrapper">
+      <p class="page-footer__copyright-text">Все права защищены</p>
+      <p class="page-footer__activity page-footer__activity--copyright">1999-2018 SD Service Devices</p>
+      <a class="page-footer__nda" href="#">Условия конфиденциальности</a>
+      <p class="page-footer__studio">Developed by wow studio</p>
     </div>
   </footer>
 </body>
