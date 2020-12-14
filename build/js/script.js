@@ -63,6 +63,10 @@ var switchLists = function (evt) {
   }
 };
 
-buttons.forEach(function (button) {
-  button.addEventListener('click', switchLists);
-});
+// buttons.forEach(function (button) {
+//   button.addEventListener('click', switchLists);
+// });
+
+for (var i = 0; i < buttons.length; i++) {
+  buttons[i].addEventListener('click', switchLists);
+}
