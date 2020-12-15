@@ -1,3 +1,20 @@
 .white-bg {
   background-color: $white;
+  background-image: url("../img/advantages-bg-desktop.png");
+  background-repeat: no-repeat;
+  background-position: 50% -29px;
+}
+
+@media (max-width: $tablet-max) {
+  .white-bg {
+    background-image: url("../img/advantages-bg-tablet.png");
+    background-position: right 90px;
+  }
+}
+
+@media (max-width: $mobile-max) {
+  .white-bg {
+    background-image: url("../img/advantages-bg-mobile.png");
+    background-position: right 652px;
+  }
 }

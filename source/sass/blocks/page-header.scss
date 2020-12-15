@@ -92,13 +92,16 @@
 
   border: 1px solid $white;
 
+  transition: 300ms all ease;
+
   &:hover,
   &:focus {
-    opacity: 0.8;
+    background-color: $blue;
+    border-color: $blue;
   }
 
   &:active {
-    opacity: 0.3;
+    opacity: 0.5;
   }
 }
 

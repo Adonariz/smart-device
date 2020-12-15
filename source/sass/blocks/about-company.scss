@@ -1,0 +1,122 @@
+.about-company__wrapper {
+  display: flex;
+  flex-direction: column;
+
+  max-width: 1170px;
+
+  padding-top: 45px;
+  padding-bottom: 138px;
+
+  background-image: url("../img/about-company-bg.png");
+  background-size: 220px 317px;
+  background-position: -12px 80px;
+  background-repeat: no-repeat;
+}
+
+.about-company__title {
+  @include roboto-condensed(36px, 51px);
+
+  color: $text-main;
+
+  margin-bottom: 5px;
+  margin-left: 188px;
+}
+
+.about-company__text {
+  @include ptmono(16px, 22px);
+
+  color: $text-main;
+
+  margin-bottom: 39px;
+  margin-left: 188px;
+  padding-right: 10px;
+}
+
+.about-company__text br {
+  margin-bottom: 20px;
+}
+
+.about-company__link {
+  font-size: 14px;
+  line-height: 16px;
+
+  color: $blue;
+
+  width: 180px;
+  height: 45px;
+
+  margin-left: 188px;
+
+  border: 1px solid $blue;
+
+  transition: 300ms all ease;
+
+  &:hover,
+  &:focus {
+    background-color: $blue;
+    color: $white;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+}
+
+@media (max-width: $tablet-max) {
+  .about-company__wrapper {
+    padding-top: 0;
+    padding-bottom: 80px;
+
+    background-size: 252px 362px;
+    background-position: -9px 24px;
+  }
+
+  .about-company__title {
+    font-size: 32px;
+    line-height: 45px;
+
+    margin-left: 200px;
+    margin-bottom: 9px;
+  }
+
+  .about-company__text {
+    margin-bottom: 41px;
+    margin-left: 200px;
+    padding-right: 30px;
+  }
+
+  .about-company__link {
+    margin-left: 200px;
+  }
+}
+
+@media (max-width: $mobile-max) {
+  .about-company__wrapper {
+    background: none;
+    padding-bottom: 60px;
+  }
+
+  .about-company__title {
+    font-size: 29px;
+    line-height: 39px;
+    letter-spacing: -0.4px;
+
+    margin-top: 37px;
+    margin-bottom: 4px;
+    margin-left: 3px;
+  }
+
+  .about-company__text {
+    margin-bottom: 29px;
+    margin-left: 7px;
+    padding-right: 0;
+  }
+
+  .about-company__text br {
+    margin-bottom: 40px;
+  }
+
+  .about-company__link {
+    margin-left: 7px;
+  }
+}

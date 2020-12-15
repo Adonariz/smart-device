@@ -61,13 +61,15 @@
 
   background-color: $blue;
 
+  transition: 300ms all ease;
+
   &:hover,
   &:focus {
     opacity: 0.8;
   }
 
   &:active {
-    opacity: 0.3;
+    opacity: 0.5;
   }
 }
 
