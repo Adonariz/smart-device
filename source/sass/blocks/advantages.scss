@@ -29,7 +29,7 @@
 
   position: relative;
 
-  transition: 200ms all ease;
+  transition: 300ms all ease;
 
   &:hover {
     background-color: $blue;
@@ -72,4 +72,73 @@
 
 .advantages__item:hover .advantages__text {
   color: $white;
+}
+
+@media (max-width: $tablet-max) {
+  .advantages__list {
+    padding-top: 54px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+  .advantages__item {
+    max-width: 47.9%;
+    height: auto;
+
+    &--big {
+      min-height: 306px;
+    }
+
+    &--small {
+      min-height: 232px;
+    }
+  }
+
+  .advantages__icon {
+    top: 23px;
+    left: 23px;
+  }
+
+  .advantages__title {
+    margin-top: 65px;
+    margin-bottom: -5px;
+    margin-left: 24px;
+  }
+
+  .advantages__text {
+    margin-left: 25px;
+    padding-right: 10px;
+  }
+}
+
+@media (max-width: $mobile-max) {
+  .advantages__list {
+    flex-direction: column;
+
+    padding-top: 37px;
+    padding-right: 6px;
+    padding-left: 4px;
+  }
+
+  .advantages__item {
+    max-width: 100%;
+
+    margin-bottom: 20px;
+
+    &--big {
+      min-height: 310px;
+    }
+
+    &--medium {
+      min-height: 244px;
+    }
+  }
+
+  .advantages__title {
+    font-size: 20px;
+    line-height: 28px;
+
+    margin-top: 68px;
+    padding-right: 20px;
+  }
 }
