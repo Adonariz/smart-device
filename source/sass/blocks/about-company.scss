@@ -5,7 +5,7 @@
   max-width: 1170px;
 
   padding-top: 45px;
-  padding-bottom: 138px;
+  padding-bottom: 110px;
 
   background-image: url("../img/about-company-bg.png");
   background-size: 220px 317px;
@@ -65,7 +65,7 @@
 @media (max-width: $tablet-max) {
   .about-company__wrapper {
     padding-top: 0;
-    padding-bottom: 80px;
+    padding-bottom: 83px;
 
     background-size: 252px 362px;
     background-position: -9px 24px;
@@ -93,7 +93,7 @@
 @media (max-width: $mobile-max) {
   .about-company__wrapper {
     background: none;
-    padding-bottom: 60px;
+    padding-bottom: 65px;
   }
 
   .about-company__title {
