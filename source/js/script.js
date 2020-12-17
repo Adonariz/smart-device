@@ -37,7 +37,7 @@ var openPopup = function () {
 
 var closePopup = function () {
   popup.classList.add('popup--closed');
-  body.style.removeProperty('overflow-y');
+  body.style.removeProperty('overflow');
 
   setDefaultValues();
 
