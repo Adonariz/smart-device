@@ -30,6 +30,8 @@ var openPopup = function () {
   popup.classList.remove('popup--closed');
   body.style.overflow = 'hidden';
 
+  popupName.focus();
+
   popupClose.addEventListener('click', closePopup);
   document.addEventListener('keydown', popupEscHandler);
   document.addEventListener('click', overlayClickHandler);
