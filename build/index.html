@@ -172,12 +172,11 @@
                 <input type="tel" id="tel" placeholder="Телефон" required="">
               </label>
             </div>
-            <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+            <textarea name="comment" id="comment" placeholder="Ваш вопрос"></textarea>
             <div class="feedback__send-wrapper">
-              <button type="submit">Задать вопрос</button>
-              <label for="checkbox">
-                <input class="visually-hidden" type="checkbox" checked="" required="">Я согласен на обработку  персональных данных
-              </label>
+              <button class="feedback__send-button button" type="submit">Задать вопрос</button>
+              <input class="visually-hidden" type="checkbox" id="personal-data" checked="" required="">
+              <label class="feedback__personal-data" for="personal-data">Я согласен на обработку  персональных данных</label>
             </div>
           </form>
         </div>
