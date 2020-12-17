@@ -166,10 +166,10 @@
           <form action="post" class="feedback__form">
             <div class="feedback__inputs-wrapper">
               <label for="name">
-                <input type="text" id="name" placeholder="Имя" required="">
+                <input type="text" id="name" name="name" placeholder="Имя" required="">
               </label>
               <label for="tel">
-                <input type="tel" id="tel" placeholder="Телефон" required="">
+                <input type="tel" id="tel" name="tel" placeholder="Телефон" required="" maxlength="18">
               </label>
             </div>
             <textarea name="comment" id="comment" placeholder="Ваш вопрос"></textarea>
@@ -276,10 +276,10 @@
       <form action="post" class="popup__form">
         <div class="popup__inputs-wrapper">
           <label>
-            <input type="text" id="popup-name" placeholder="Имя" required="">
+            <input type="text" id="popup-name" name="popup-name" placeholder="Имя" required="">
           </label>
           <label>
-            <input type="tel" id="popup-tel" placeholder="Телефон" required="">
+            <input type="tel" id="popup-tel" name="popup-tel" placeholder="Телефон" required="" maxlength="18">
           </label>
         </div>
         <textarea name="popup-comment" id="popup-comment" placeholder="Ваш вопрос"></textarea>
