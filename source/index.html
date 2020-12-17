@@ -35,7 +35,7 @@
           <a href="tel:+74950005252" class="page-header__link page-header__link--tel"><span>+7 (495) 000 52 52</span></a>
         </li>
       </ul>
-      <a href="#" class="page-header__button button">Заказать звонок</a>
+      <a href="#feedback" class="page-header__button button">Заказать звонок</a>
     </div>
   </header>
   <main>
@@ -104,9 +104,8 @@
             Выполняем срочные заказы и пилотные образцы до 10 дней.
             <br>
             Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND.
-            Печатные платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог
-            <!-- (РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники.
-            Среди наших клиентов крупнейшие Производители светотехники России. -->
+            Печатные платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог (РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники.
+            Среди наших клиентов крупнейшие Производители светотехники России.
           </p>
           <a href="#" class="about-company__link button">Подробнее</a>
         </div>
@@ -235,6 +234,33 @@
       <p class="page-footer__studio">Developed by wow studio</p>
     </div>
   </footer>
+
+  <div class="popup popup--closed">
+    <div class="popup__wrapper">
+      <button class="popup__close" aria-label="Закрыть всплывающее окно"></button>
+      <div class="popup__text-wrapper">
+        <h2 class="popup__title">Закажите звонок</h2>
+        <p class="popup__text">Оставьте контакты, мы проконсультируем вас&nbsp;бесплатно в удобное время</p>
+      </div>
+      <form action="post" class="popup__form">
+        <div class="popup__inputs-wrapper">
+          <label>
+            <input type="text" id="popup-name" placeholder="Имя" required>
+          </label>
+          <label>
+            <input type="tel" id="popup-tel" placeholder="Телефон" required>
+          </label>
+        </div>
+        <textarea name="popup-comment" id="popup-comment" placeholder="Ваш вопрос"></textarea>
+        <div class="popup__send-wrapper">
+          <button class="popup__send-button button" type="submit">Отправить</button>
+          <input class="visually-hidden" type="checkbox" id="popup-personal-data" checked required>
+          <label class="popup__personal-data" for="popup-personal-data">Я согласен на обработку  персональных данных</label>
+        </div>
+      </form>
+    </div>
+  </div>
+
   <script src="js/script.js"></script>
 </body>
 </html>
