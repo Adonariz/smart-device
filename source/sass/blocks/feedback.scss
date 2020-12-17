@@ -78,6 +78,11 @@
   &::placeholder {
     opacity: 1;
   }
+
+  &:hover,
+  &:focus {
+    background-color: rgba($white, 0.2);
+  }
 }
 
 .feedback__form textarea {
@@ -104,6 +109,11 @@
 
   &::placeholder {
     opacity: 1;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: rgba($white, 0.2);
   }
 }
 
@@ -193,4 +203,121 @@
 
 .feedback__send-wrapper input:focus + .feedback__personal-data {
   opacity: 1;
+}
+
+@media (max-width: $tablet-max) {
+  .feedback {
+    background-image: none;
+  }
+
+  .feedback__wrapper {
+    background-image: none;
+  }
+
+  .feedback__form-wrapper {
+    width: 591px;
+    max-width: initial;
+
+    margin-right: auto;
+
+    padding-top: 53px;
+    padding-bottom: 106px;
+  }
+
+  .feedback__title {
+    font-size: 32px;
+    line-height: 45px;
+
+    margin-bottom: 15px;
+  }
+
+  .feedback__text {
+    margin-bottom: 54px;
+  }
+
+  .feedback__form {
+    max-width: initial;
+  }
+
+  .feedback__form textarea {
+    height: 160px;
+    margin-bottom: 45px;
+  }
+
+  .feedback__inputs-wrapper label {
+    width: 280px;
+    max-width: initial;
+  }
+
+  .feedback__inputs-wrapper input {
+    height: 52px;
+    margin-bottom: 42px;
+  }
+
+  .feedback__send-button {
+    width: 280px;
+    max-width: initial;
+  }
+}
+
+@media (max-width: $mobile-max) {
+  .feedback__form-wrapper {
+    width: auto;
+    max-width: 430px;
+
+    padding-top: 6px;
+    padding-bottom: 45px;
+  }
+
+  .feedback__title {
+    font-size: 28px;
+    line-height: 39px;
+
+    margin-bottom: 15px;
+    margin-left: 5px;
+  }
+
+  .feedback__text {
+    margin-bottom: 24px;
+    margin-left: 5px;
+  }
+
+  .feedback__form {
+    margin-left: 5px;
+  }
+
+  .feedback__inputs-wrapper {
+    flex-direction: column;
+  }
+
+  .feedback__inputs-wrapper label {
+    width: 100%;
+  }
+
+  .feedback__inputs-wrapper input {
+    margin-bottom: 31px;
+  }
+
+  .feedback__form-wrapper textarea {
+    height: 104px;
+    margin-bottom: 29px;
+  }
+
+  .feedback__send-wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .feedback__send-button {
+    width: 290px;
+    margin-bottom: 28px;
+  }
+
+  .feedback__personal-data {
+    width: 200px;
+    margin-left: 30px;
+  }
 }
