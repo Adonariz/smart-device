@@ -2,6 +2,11 @@
   background-image: url("../img/intro-desktop.png");
   background-repeat: no-repeat;
   background-position: calc(50% + 435px) 33px;
+  background-size: 713px 655px;
+
+  @media (min-resolution: $retina) {
+    background-image: url("../img/intro-desktop@2x.png");
+  }
 }
 
 .intro__wrapper {
@@ -100,7 +105,12 @@
 @media (max-width: $tablet-max) {
   .intro {
     background-image: url("../img/intro-tablet.png");
+    background-size: 330px 466px;
     background-position: right -72px;
+
+    @media (min-resolution: $retina) {
+      background-image: url("../img/intro-tablet@2x.png");
+    }
   }
 
   .intro__wrapper {
@@ -153,7 +163,12 @@
 @media (max-width: $mobile-max) {
   .intro {
     background-image: url("../img/intro-mobile.png");
+    background-size: 294px 437px;
     background-position: right -62px;
+
+    @media (min-resolution: $retina) {
+      background-image: url("../img/intro-mobile@2x.png");
+    }
   }
 
   .intro__wrapper {

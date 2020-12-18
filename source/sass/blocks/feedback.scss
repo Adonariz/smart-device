@@ -12,6 +12,10 @@
   background-repeat: no-repeat;
   background-position: 13% 161px;
   background-size: 35.3% 42.9%;
+
+  @media (min-resolution: $retina) {
+    background-image: url("../img/paper-airplane@2x.png");
+  }
 }
 
 .feedback__form-wrapper {

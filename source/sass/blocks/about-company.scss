@@ -11,6 +11,10 @@
   background-size: 220px 317px;
   background-position: -12px 80px;
   background-repeat: no-repeat;
+
+  @media (min-resolution: $retina) {
+    background-image: url("../img/about-company-bg@2x.png");
+  }
 }
 
 .about-company__title {

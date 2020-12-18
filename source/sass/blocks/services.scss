@@ -44,14 +44,26 @@
 
   &--produce {
     background-image: url("../img/services-1-desktop.png");
+
+    @media (min-resolution: $retina) {
+      background-image: url("../img/services-1-desktop@2x.png");
+    }
   }
 
   &--mount {
     background-image: url("../img/services-2-desktop.png");
+
+    @media (min-resolution: $retina) {
+      background-image: url("../img/services-2-desktop@2x.png");
+    }
   }
 
   &--parts {
     background-image: url("../img/services-3-desktop.png");
+
+    @media (min-resolution: $retina) {
+      background-image: url("../img/services-3-desktop@2x.png");
+    }
   }
 
   &:hover,
@@ -133,14 +145,26 @@
 
     &--produce {
       background-image: url("../img/services-1-tablet.png");
+
+      @media (min-resolution: $retina) {
+        background-image: url("../img/services-1-tablet@2x.png");
+      }
     }
 
     &--mount {
       background-image: url("../img/services-2-tablet.png");
+
+      @media (min-resolution: $retina) {
+        background-image: url("../img/services-2-tablet@2x.png");
+      }
     }
 
     &--parts {
       background-image: url("../img/services-3-tablet.png");
+
+      @media (min-resolution: $retina) {
+        background-image: url("../img/services-3-tablet@2x.png");
+      }
     }
   }
 
@@ -182,14 +206,26 @@
 
     &--produce {
       background-image: url("../img/services-1-mobile.png");
+
+      @media (min-resolution: $retina) {
+        background-image: url("../img/services-1-mobile@2x.png");
+      }
     }
 
     &--mount {
       background-image: url("../img/services-2-mobile.png");
+
+      @media (min-resolution: $retina) {
+        background-image: url("../img/services-2-mobile@2x.png");
+      }
     }
 
     &--parts {
       background-image: url("../img/services-3-mobile.png");
+
+      @media (min-resolution: $retina) {
+        background-image: url("../img/services-3-mobile@2x.png");
+      }
     }
   }
 
