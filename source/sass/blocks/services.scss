@@ -7,7 +7,7 @@
   padding-bottom: 127px;
 }
 
-.services__title {
+.services__wrapper h2 {
   @include roboto-condensed(36px, 51px);
 
   color: $white;
@@ -112,7 +112,7 @@
     padding-bottom: 78px;
   }
 
-  .services__title {
+  .services__wrapper h2 {
     font-size: 32px;
     line-height: 45px;
 
@@ -184,7 +184,7 @@
     padding-bottom: 64px;
   }
 
-  .services__title {
+  .services__wrapper h2 {
     font-size: 28px;
     line-height: 39px;
   }

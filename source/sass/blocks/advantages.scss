@@ -46,7 +46,7 @@
   fill: $blue;
 }
 
-.advantages__title {
+.advantages__item h3 {
   @include roboto-condensed(24px, 34px);
 
   color: $blue;
@@ -56,7 +56,7 @@
   margin-left: 41px;
 }
 
-.advantages__text {
+.advantages__item p {
   @include ptmono(16px, 22px);
 
   color: $text-main;
@@ -68,11 +68,11 @@
   fill: $white;
 }
 
-.advantages__item:hover .advantages__title {
+.advantages__item:hover h3 {
   color: $white;
 }
 
-.advantages__item:hover .advantages__text {
+.advantages__item:hover p {
   color: $white;
 }
 
@@ -101,13 +101,13 @@
     left: 23px;
   }
 
-  .advantages__title {
+  .advantages__item h3 {
     margin-top: 65px;
     margin-bottom: -5px;
     margin-left: 24px;
   }
 
-  .advantages__text {
+  .advantages__item p {
     margin-left: 25px;
     padding-right: 10px;
   }
@@ -137,7 +137,7 @@
     }
   }
 
-  .advantages__title {
+  .advantages__item h3 {
     font-size: 20px;
     line-height: 28px;
 

@@ -50,7 +50,7 @@
   width: 412px;
 }
 
-.popup__title {
+.popup__text-wrapper h2 {
   @include roboto-condensed(28px, 39px);
 
   color: $white;
@@ -59,7 +59,7 @@
   margin-bottom: 0;
 }
 
-.popup__text {
+.popup__text-wrapper p {
   @include ptmono(16px, 22px);
 
   color: $white;

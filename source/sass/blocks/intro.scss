@@ -16,7 +16,7 @@
   position: relative;
 }
 
-.intro__heading {
+.intro__text-wrapper h2 {
   @include roboto-condensed(80px, 93.75px, 700);
 
   color: $white;
@@ -30,7 +30,7 @@
   margin-left: 10px;
 }
 
-.intro__text {
+.intro__text-wrapper p {
   @include ptmono(22px, 34.5px);
 
   color: white;
@@ -117,7 +117,7 @@
     min-height: 614px;
   }
 
-  .intro__heading {
+  .intro__text-wrapper h2 {
     max-width: 470px;
 
     font-size: 60px;
@@ -129,7 +129,7 @@
     padding-top: 116px;
   }
 
-  .intro__text {
+  .intro__text-wrapper p {
     max-width: 356px;
 
     font-size: 18px;
@@ -182,7 +182,7 @@
   }
 
 
-  .intro__heading {
+  .intro__text-wrapper h2 {
     font-size: 40px;
     line-height: 47px;
     letter-spacing: 2.8px;
@@ -192,7 +192,7 @@
     padding-top: 223px;
   }
 
-  .intro__text {
+  .intro__text-wrapper p {
     font-size: 16px;
     line-height: 25px;
 

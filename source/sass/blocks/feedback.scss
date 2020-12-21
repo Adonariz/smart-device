@@ -28,7 +28,7 @@
   padding-bottom: 112px;
 }
 
-.feedback__title {
+.feedback__form-wrapper h2 {
   @include roboto-condensed(36px, 51px);
 
   color: $white;
@@ -36,7 +36,7 @@
   margin-bottom: 0;
 }
 
-.feedback__text {
+.feedback__form-wrapper p {
   @include ptmono(16px, 22px);
 
   color: $white;
@@ -230,14 +230,14 @@
     padding-bottom: 106px;
   }
 
-  .feedback__title {
+  .feedback__form-wrapper h2 {
     font-size: 32px;
     line-height: 45px;
 
     margin-bottom: 15px;
   }
 
-  .feedback__text {
+  .feedback__form-wrapper p {
     margin-bottom: 54px;
   }
 
@@ -275,7 +275,7 @@
     padding-bottom: 45px;
   }
 
-  .feedback__title {
+  .feedback__form-wrapper h2 {
     font-size: 28px;
     line-height: 39px;
 
@@ -283,7 +283,7 @@
     margin-left: 5px;
   }
 
-  .feedback__text {
+  .feedback__form-wrapper p {
     margin-bottom: 24px;
     margin-left: 5px;
   }
