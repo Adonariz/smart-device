@@ -31,19 +31,25 @@
 }
 
 .popup__close {
-  width: 17px;
-  height: 17px;
+  width: 30px;
+  height: 30px;
 
   border: none;
 
   background-color: transparent;
   background-image: url("../img/cross.svg");
+  background-size: 17px 17px;
   background-repeat: no-repeat;
   background-position: center;
 
   position: absolute;
-  top: 20px;
-  right: 20px;
+  top: 13px;
+  right: 14px;
+
+  &:focus {
+    border: 1px solid $white;
+    border-radius: 5px;
+  }
 }
 
 .popup__text-wrapper {
@@ -92,6 +98,7 @@
   background-color: rgba($white, 0.1);
 
   border: none;
+  border-radius: 0;
 
   &::placeholder {
     opacity: 1;
@@ -124,6 +131,7 @@
   background-color: rgba($white, 0.1);
 
   border: none;
+  border-radius: 0;
 
   resize: none;
 

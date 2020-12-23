@@ -17,6 +17,7 @@
   var contactsListButton = document.querySelector('.page-footer__list-button--contacts');
   var contactsList = document.querySelector('.page-footer__contacts-list');
   var buttons = document.querySelectorAll('.page-footer__list-button');
+  var naviHeadings = document.querySelectorAll('.page-footer__navi-heading');
   var form = document.querySelector('.feedback__form');
 
   if (form) {
@@ -84,9 +85,7 @@
 
   // локальное хранилище
   if (form) {
-    form.addEventListener('submit', function (evt) {
-      evt.preventDefault();
-
+    form.addEventListener('submit', function () {
       localStorage.setItem('name', userName.value);
       localStorage.setItem('phone', userPhone.value);
       localStorage.setItem('question', userComment.value);
@@ -94,9 +93,7 @@
   }
 
   if (popup) {
-    popup.addEventListener('submit', function (evt) {
-      evt.preventDefault();
-
+    popup.addEventListener('submit', function () {
       localStorage.setItem('name', popupName.value);
       localStorage.setItem('phone', popupPhone.value);
       localStorage.setItem('question', popupComment.value);
@@ -202,15 +199,15 @@
   var switchLists = function (evt) {
     var target = evt.target;
 
-    if (target === naviListButton) {
-      if (target.classList.contains('page-footer__list-button--opened')) {
-        target.classList.remove('page-footer__list-button--opened');
-        target.classList.add('page-footer__list-button--closed');
+    if (target === naviListButton || target.classList.contains('page-footer__navi-heading--sections')) {
+      if (naviListButton.classList.contains('page-footer__list-button--opened')) {
+        naviListButton.classList.remove('page-footer__list-button--opened');
+        naviListButton.classList.add('page-footer__list-button--closed');
         naviList.classList.add('visually-hidden');
       } else {
         naviList.classList.remove('visually-hidden');
-        target.classList.remove('page-footer__list-button--closed');
-        target.classList.add('page-footer__list-button--opened');
+        naviListButton.classList.remove('page-footer__list-button--closed');
+        naviListButton.classList.add('page-footer__list-button--opened');
 
         contactsList.classList.add('visually-hidden');
         contactsListButton.classList.remove('page-footer__list-button--opened');
@@ -218,15 +215,15 @@
       }
     }
 
-    if (target === contactsListButton) {
-      if (target.classList.contains('page-footer__list-button--opened')) {
-        target.classList.remove('page-footer__list-button--opened');
-        target.classList.add('page-footer__list-button--closed');
+    if (target === contactsListButton || target.classList.contains('page-footer__navi-heading--contacts')) {
+      if (contactsListButton.classList.contains('page-footer__list-button--opened')) {
+        contactsListButton.classList.remove('page-footer__list-button--opened');
+        contactsListButton.classList.add('page-footer__list-button--closed');
         contactsList.classList.add('visually-hidden');
       } else {
         contactsList.classList.remove('visually-hidden');
-        target.classList.remove('page-footer__list-button--closed');
-        target.classList.add('page-footer__list-button--opened');
+        contactsListButton.classList.remove('page-footer__list-button--closed');
+        contactsListButton.classList.add('page-footer__list-button--opened');
 
         naviList.classList.add('visually-hidden');
         naviListButton.classList.remove('page-footer__list-button--opened');
@@ -238,6 +235,12 @@
   if (buttons) {
     for (var i = 0; i < buttons.length; i++) {
       buttons[i].addEventListener('click', switchLists);
+    }
+  }
+
+  if (naviHeadings) {
+    for (var i = 0; i < naviHeadings.length; i++) {
+      naviHeadings[i].addEventListener('click', switchLists);
     }
   }
 })();

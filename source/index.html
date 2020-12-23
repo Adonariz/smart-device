@@ -27,10 +27,10 @@
       </a>
       <ul class="page-header__links">
         <li class="page-header__item">
-          <a href="mailto:info@sd.ru" class="page-header__link page-header__link--mail"><span>info@sd.ru</span></a>
+          <a href="mailto:info@sd.ru" class="page-header__link page-header__link--mail" aria-label="Электронная почта для связи"><span>info@sd.ru</span></a>
         </li>
         <li class="page-header__item">
-          <a href="tel:+74950005252" class="page-header__link page-header__link--tel"><span>+7 (495) 000 52 52</span></a>
+          <a href="tel:+74950005252" class="page-header__link page-header__link--tel" aria-label="Телефон для связи"><span>+7 (495) 000 52 52</span></a>
         </li>
       </ul>
       <a href="#feedback" class="page-header__button button">Заказать звонок</a>
@@ -186,41 +186,28 @@
       </div>
       <div class="page-footer__navi-wrapper">
         <div class="page-footer__sections">
-          <h3 class="page-footer__navi-heading">Разделы сайта</h3>
+          <h3 class="page-footer__navi-heading page-footer__navi-heading--sections">Разделы сайта</h3>
           <button class="page-footer__list-button page-footer__list-button--closed page-footer__list-button--navi"></button>
           <ul class="page-footer__navi-list">
-            <li>
-              <a class="page-footer__navi-link page-footer__text" href="#">О компании</a>
-            </li>
-            <li>
-              <a class="page-footer__navi-link page-footer__text" href="#">Продукты</a>
-            </li>
-            <li>
-              <a class="page-footer__navi-link page-footer__text" href="#">Производство печатных плат</a>
-            </li>
-            <li>
-              <a class="page-footer__navi-link page-footer__text" href="#">Монтаж печатных плат</a>
-            </li>
-            <li>
-              <a class="page-footer__navi-link page-footer__text" href="#">Комплектующие</a>
-            </li>
-            <li>
-              <a class="page-footer__navi-link page-footer__text" href="#">Доставка</a>
-            </li>
-            <li>
-              <a class="page-footer__navi-link page-footer__text" href="#">Контакты</a>
+            <li><a class="page-footer__navi-link page-footer__text" href="#">О компании</a></li>
+            <li><a class="page-footer__navi-link page-footer__text" href="#">Продукты</a></li>
+            <li><a class="page-footer__navi-link page-footer__text" href="#">Производство печатных плат</a></li>
+            <li><a class="page-footer__navi-link page-footer__text" href="#">Монтаж печатных плат</a></li>
+            <li><a class="page-footer__navi-link page-footer__text" href="#">Комплектующие</a></li>
+            <li><a class="page-footer__navi-link page-footer__text" href="#">Доставка</a></li>
+            <li><a class="page-footer__navi-link page-footer__text" href="#">Контакты</a>
             </li>
           </ul>
         </div>
         <div class="page-footer__contacts">
-          <h3 class="page-footer__navi-heading">Наш офис</h3>
+          <h3 class="page-footer__navi-heading page-footer__navi-heading--contacts">Наш офис</h3>
           <button class="page-footer__list-button page-footer__list-button--closed page-footer__list-button--contacts"></button>
           <div class="page-footer__contacts-list">
             <p class="page-footer__address page-footer__text">г. Мытищи, Олимпийский проспект, д.10</p>
             <ul class="page-footer__phones-list">
-              <li class="page-footer__text">+7 (495) 589-40-50</li>
-              <li class="page-footer__text">+7 (925) 003-87-67</li>
-              <li class="page-footer__text">+7 (926) 926-080-79</li>
+              <li><a class="page-footer__text page-footer__phones-link" href="tel:+74955894050" aria-label="Телефон для связи">+7 (495) 589-40-50</a></li>
+              <li><a class="page-footer__text page-footer__phones-link" href="tel:+79250038767" aria-label="Телефон для связи">+7 (925) 003-87-67</a></li>
+              <li><a class="page-footer__text page-footer__phones-link" href="tel:+792608079" aria-label="Телефон для связи">+7 (926) 926-080-79</a></li>
             </ul>
           </div>
         </div>
@@ -261,6 +248,6 @@
   </div>
 
   <script src="js/vendor.js" async></script>
-  <script src="js/main.js"></script>
+  <script src="js/main.js" async></script>
 </body>
 </html>

@@ -78,6 +78,7 @@
   background-color: rgba($white, 0.1);
 
   border: none;
+  border-radius: 0;
 
   &::placeholder {
     opacity: 1;
@@ -109,6 +110,7 @@
   background-color: rgba($white, 0.1);
 
   border: none;
+  border-radius: 0;
 
   resize: none;
 

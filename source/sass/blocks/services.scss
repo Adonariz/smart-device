@@ -4,7 +4,7 @@
   justify-content: center;
 
   padding-top: 58px;
-  padding-bottom: 127px;
+  padding-bottom: 97px;
 }
 
 .services__wrapper h2 {
@@ -30,6 +30,8 @@
   max-width: 370px;
   min-height: 620px;
 
+  margin-bottom: 30px;
+
   background-repeat: no-repeat;
   background-position: center;
   background-size: 102% 103%;
@@ -38,7 +40,7 @@
 
   transition: 300ms background-size ease;
 
-  &:not(:last-of-type) {
+  &:not(:nth-of-type(3n)) {
     margin-right: 30px;
   }
 
@@ -135,6 +137,8 @@
     width: 100%;
     max-width: unset;
     min-height: 256px;
+
+    margin-bottom: 0;
 
     background-size: 100% 100%;
 
