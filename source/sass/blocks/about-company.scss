@@ -31,13 +31,9 @@
 
   color: $text-main;
 
-  margin-bottom: 39px;
+  margin-bottom: 5px;
   margin-left: 188px;
   padding-right: 10px;
-}
-
-.about-company__wrapper br {
-  margin-bottom: 20px;
 }
 
 .about-company__link {
@@ -49,6 +45,7 @@
   width: 180px;
   height: 45px;
 
+  margin-top: 33px;
   margin-left: 188px;
 
   border: 1px solid $blue;
@@ -84,12 +81,13 @@
   }
 
   .about-company__wrapper p {
-    margin-bottom: 41px;
+    margin-bottom: 4px;
     margin-left: 200px;
     padding-right: 30px;
   }
 
   .about-company__link {
+    margin-top: 37px;
     margin-left: 200px;
   }
 }
@@ -111,16 +109,13 @@
   }
 
   .about-company__wrapper p {
-    margin-bottom: 29px;
+    margin-bottom: 25px;
     margin-left: 7px;
     padding-right: 0;
   }
 
-  .about-company__wrapper br {
-    margin-bottom: 40px;
-  }
-
   .about-company__link {
+    margin-top: 3px;
     margin-left: 7px;
   }
 }
