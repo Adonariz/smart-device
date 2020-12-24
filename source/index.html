@@ -10,9 +10,9 @@
   <script>
     document.documentElement.classList.remove("no-js");
   </script>
-  <link rel="preload" href="fonts/PTMono-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <!-- <link rel="preload" href="fonts/PTMono-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="preload" href="fonts/RobotoCondensed-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-  <link rel="preload" href="fonts/RobotoCondensed-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/RobotoCondensed-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous"> -->
   <link rel="preload" href="fonts/PTMono-Regular.woff" as="font" type="font/woff" crossorigin="anonymous">
   <link rel="preload" href="fonts/RobotoCondensed-Regular.woff" as="font" type="font/woff" crossorigin="anonymous">
   <link rel="preload" href="fonts/RobotoCondensed-Bold.woff" as="font" type="font/woff" crossorigin="anonymous">
@@ -26,7 +26,7 @@
         <picture>
           <source type="image/webp" media="(max-width: 767px)" srcset="img/logo-mobile.webp, img/logo-mobile@2x.webp 2x">
           <source type="image/webp" srcset="img/logo-header.webp, img/logo-header@2x.webp 2x">
-          <source media="(max-width: 767px)" srcset="img/logo-header.png, img/logo-header@2x.png 2x">
+          <source media="(max-width: 767px)" srcset="img/logo-mobile.png, img/logo-mobile@2x.png 2x">
           <img src="img/logo-header.png" srcset="img/logo-header@2x.png 2x" alt="Логотип" width="202" height="52">
         </picture>
       </a>
@@ -119,13 +119,13 @@
       <div class="services__wrapper wrapper">
         <h2>Service Device предлагает&nbsp;следующие товары и услуги</h2>
         <ul class="services__list">
-          <li class="services__item services__item--produce">
+          <li class="services__item services__item--produce lazy">
             <a href="#" class="services__link"><span class="services__name">Производство печатных плат</span></a>
           </li>
-          <li class="services__item services__item--mount">
+          <li class="services__item services__item--mount lazy">
             <a href="#" class="services__link"><span class="services__name">Монтаж печатных плат</span></a>
           </li>
-          <li class="services__item services__item--parts">
+          <li class="services__item services__item--parts lazy">
             <a href="#" class="services__link"><span class="services__name">Комплектующие для&nbsp;светотехники</span></a>
           </li>
         </ul>
@@ -231,7 +231,6 @@
 
   <div class="popup popup--closed">
     <div class="popup__wrapper">
-      <button class="popup__close" aria-label="Закрыть всплывающее окно"></button>
       <div class="popup__text-wrapper">
         <h2 class="popup__title">Закажите звонок</h2>
         <p class="popup__text">Оставьте контакты, мы проконсультируем вас&nbsp;бесплатно в удобное время</p>
@@ -251,11 +250,12 @@
           <input class="visually-hidden" type="checkbox" id="popup-personal-data" checked required>
           <label class="popup__personal-data" for="popup-personal-data">Я согласен на обработку  персональных данных</label>
         </div>
+        <button class="popup__close" aria-label="Закрыть всплывающее окно"></button>
       </form>
     </div>
   </div>
 
-  <script src="js/vendor.js" async></script>
-  <script src="js/main.js" async></script>
+  <script type="text/javascript" src="js/vendor.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>

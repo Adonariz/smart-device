@@ -48,6 +48,10 @@
   &:focus {
     background-size: 110% 110%;
   }
+
+  &.lazy {
+    background: none;
+  }
 }
 
 .no-js .services__item,
