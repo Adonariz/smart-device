@@ -14,9 +14,17 @@ body {
   box-sizing: border-box;
   position: relative;
 
-  background-image: url("../img/bg.png");
   background-repeat: no-repeat;
   background-color: $dark;
+}
+
+.no-js body,
+.no-webp body {
+  background-image: url("../img/bg.png");
+}
+
+.webp body {
+  background-image: url("../img/bg.webp");
 }
 
 a {

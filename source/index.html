@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="no-js" lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +7,9 @@
     content="Компания Smart Device занимается продажей и монтажом печатных плат, поставкой комплектующих, блоков и модулей">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Smart Device</title>
+  <script>
+    document.documentElement.classList.remove("no-js");
+  </script>
   <link rel="preload" href="fonts/PTMono-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="preload" href="fonts/RobotoCondensed-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="preload" href="fonts/RobotoCondensed-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
@@ -21,7 +24,9 @@
     <div class="page-header__wrapper wrapper">
       <a class="page-header__logo">
         <picture>
-          <source media="(max-width: 767px)" srcset="img/logo-mobile.png, img/logo-mobile@2x.png 2x">
+          <source type="image/webp" media="(max-width: 767px)" srcset="img/logo-mobile.webp, img/logo-mobile@2x.webp 2x">
+          <source type="image/webp" srcset="img/logo-header.webp, img/logo-header@2x.webp 2x">
+          <source media="(max-width: 767px)" srcset="img/logo-header.png, img/logo-header@2x.png 2x">
           <img src="img/logo-header.png" srcset="img/logo-header@2x.png 2x" alt="Логотип" width="202" height="52">
         </picture>
       </a>
@@ -133,14 +138,14 @@
           <p class="feedback__text">Мы проконсультируем Вас бесплатно</p>
           <form action="post" class="feedback__form">
             <div class="feedback__inputs-wrapper">
-              <label for="name">
+              <label for="name" aria-label="Введите ваше имя">
                 <input type="text" id="name" name="name" placeholder="Имя" required>
               </label>
-              <label for="tel">
+              <label for="tel"  aria-label="Введите номер телефона">
                 <input type="tel" id="tel" name="tel" placeholder="Телефон" required maxlength="18">
               </label>
             </div>
-            <textarea name="comment" id="comment" placeholder="Ваш вопрос"></textarea>
+            <textarea name="comment" id="comment" placeholder="Ваш вопрос"  aria-label="Введите ваш вопрос"></textarea>
             <div class="feedback__send-wrapper">
               <button class="feedback__send-button button" type="submit">Задать вопрос</button>
               <input class="visually-hidden" type="checkbox" id="personal-data" checked required>
@@ -155,7 +160,10 @@
     <div class="page-footer__first-line wrapper">
       <div class="page-footer__about">
         <a class="page-footer__logo">
-          <img src="img/logo-footer.png" srcset="img/logo-footer@2x.png 2x" alt="Логотип" width="216" height="52">
+          <picture>
+            <source type="image/webp" srcset="img/logo-footer.webp, img/logo-footer@2x.webp 2x">
+            <img src="img/logo-footer.png" srcset="img/logo-footer@2x.png 2x" alt="Логотип" width="216" height="52">
+          </picture>
         </a>
         <p class="page-footer__activity page-footer__activity--about">
           1999-2018 SD Service Devices
@@ -187,7 +195,7 @@
       <div class="page-footer__navi-wrapper">
         <div class="page-footer__sections">
           <h3 class="page-footer__navi-heading page-footer__navi-heading--sections">Разделы сайта</h3>
-          <button class="page-footer__list-button page-footer__list-button--closed page-footer__list-button--navi"></button>
+          <button class="page-footer__list-button page-footer__list-button--closed page-footer__list-button--navi" aria-label="Открыть список разделов сайта"></button>
           <ul class="page-footer__navi-list">
             <li><a class="page-footer__navi-link page-footer__text" href="#">О компании</a></li>
             <li><a class="page-footer__navi-link page-footer__text" href="#">Продукты</a></li>
@@ -201,7 +209,7 @@
         </div>
         <div class="page-footer__contacts">
           <h3 class="page-footer__navi-heading page-footer__navi-heading--contacts">Наш офис</h3>
-          <button class="page-footer__list-button page-footer__list-button--closed page-footer__list-button--contacts"></button>
+          <button class="page-footer__list-button page-footer__list-button--closed page-footer__list-button--contacts" aria-label="Открыть список контактов"></button>
           <div class="page-footer__contacts-list">
             <p class="page-footer__address page-footer__text">г. Мытищи, Олимпийский проспект, д.10</p>
             <ul class="page-footer__phones-list">

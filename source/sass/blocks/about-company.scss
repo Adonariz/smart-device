@@ -7,13 +7,25 @@
   padding-top: 45px;
   padding-bottom: 110px;
 
-  background-image: url("../img/about-company-bg.png");
   background-size: 220px 317px;
   background-position: -12px 80px;
   background-repeat: no-repeat;
+}
+
+.no-js .about-company__wrapper,
+.no-webp .about-company__wrapper {
+  background-image: url("../img/about-company-bg.png");
 
   @media (min-resolution: $retina) {
     background-image: url("../img/about-company-bg@2x.png");
+  }
+}
+
+.webp .about-company__wrapper {
+  background-image: url("../img/about-company-bg.webp");
+
+  @media (min-resolution: $retina) {
+    background-image: url("../img/about-company-bg@2x.webp");
   }
 }
 
@@ -96,6 +108,10 @@
   .about-company__wrapper {
     background: none;
     padding-bottom: 65px;
+  }
+
+  .webp .about-company__wrapper {
+    background: none;
   }
 
   .about-company__wrapper h2 {

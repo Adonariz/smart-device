@@ -44,6 +44,14 @@
     margin-right: 30px;
   }
 
+  &:hover,
+  &:focus {
+    background-size: 110% 110%;
+  }
+}
+
+.no-js .services__item,
+.no-webp .services__item {
   &--produce {
     background-image: url("../img/services-1-desktop.png");
 
@@ -67,10 +75,31 @@
       background-image: url("../img/services-3-desktop@2x.png");
     }
   }
+}
 
-  &:hover,
-  &:focus {
-    background-size: 110% 110%;
+.webp .services__item {
+  &--produce {
+    background-image: url("../img/services-1-desktop.webp");
+
+    @media (min-resolution: $retina) {
+      background-image: url("../img/services-1-desktop@2x.webp");
+    }
+  }
+
+  &--mount {
+    background-image: url("../img/services-2-desktop.webp");
+
+    @media (min-resolution: $retina) {
+      background-image: url("../img/services-2-desktop@2x.webp");
+    }
+  }
+
+  &--parts {
+    background-image: url("../img/services-3-desktop.webp");
+
+    @media (min-resolution: $retina) {
+      background-image: url("../img/services-3-desktop@2x.webp");
+    }
   }
 }
 
@@ -146,7 +175,10 @@
       margin-right: 0;
       margin-bottom: 46px;
     }
+  }
 
+  .no-js .services__item,
+  .no-webp .services__item {
     &--produce {
       background-image: url("../img/services-1-tablet.png");
 
@@ -168,6 +200,32 @@
 
       @media (min-resolution: $retina) {
         background-image: url("../img/services-3-tablet@2x.png");
+      }
+    }
+  }
+
+  .webp .services__item {
+    &--produce {
+      background-image: url("../img/services-1-tablet.webp");
+
+      @media (min-resolution: $retina) {
+        background-image: url("../img/services-1-tablet@2x.webp");
+      }
+    }
+
+    &--mount {
+      background-image: url("../img/services-2-tablet.webp");
+
+      @media (min-resolution: $retina) {
+        background-image: url("../img/services-2-tablet@2x.webp");
+      }
+    }
+
+    &--parts {
+      background-image: url("../img/services-3-tablet.webp");
+
+      @media (min-resolution: $retina) {
+        background-image: url("../img/services-3-tablet@2x.webp");
       }
     }
   }
@@ -207,7 +265,10 @@
     &:not(:last-of-type) {
       margin-bottom: 30px;
     }
+  }
 
+  .no-js .services__item,
+  .no-webp .services__item {
     &--produce {
       background-image: url("../img/services-1-mobile.png");
 
@@ -229,6 +290,32 @@
 
       @media (min-resolution: $retina) {
         background-image: url("../img/services-3-mobile@2x.png");
+      }
+    }
+  }
+
+  .webp .services__item {
+    &--produce {
+      background-image: url("../img/services-1-mobile.webp");
+
+      @media (min-resolution: $retina) {
+        background-image: url("../img/services-1-mobile@2x.webp");
+      }
+    }
+
+    &--mount {
+      background-image: url("../img/services-2-mobile.webp");
+
+      @media (min-resolution: $retina) {
+        background-image: url("../img/services-2-mobile@2x.webp");
+      }
+    }
+
+    &--parts {
+      background-image: url("../img/services-3-mobile.webp");
+
+      @media (min-resolution: $retina) {
+        background-image: url("../img/services-3-mobile@2x.webp");
       }
     }
   }
